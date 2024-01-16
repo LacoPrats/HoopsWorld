@@ -1,0 +1,92 @@
+.offers {
+    width: 65%;
+    height: 70vh;
+    display: flex;
+    margin: auto;
+    padding: 0 140px;
+    margin-bottom: 50px;
+    background-image: url("../../assets/imagenes/banners/carrouse;.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 2rem;
+    box-shadow:
+        inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+        0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+.offers-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.offers-left h1 {
+    color: #000000;
+    font-size: 60px;
+    font-weight: 600;
+    width: 400px;
+}
+
+.offers-left button {
+    width: 200px;
+    height: 70px;
+    border-radius: 35px;
+    background: rgb(255, 0, 0);
+    border: none;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.offers-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.offers-right img {
+    height: 450px;
+    margin: auto;
+}
+
+/* Media queries para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+    .offers {
+        width: 80%;
+        padding: 0 30px; /* Ajuste del relleno para pantallas más pequeñas */
+        height: auto;
+        flex-direction: column;
+    }
+
+    .offers-left {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .offers-left h1 {
+        font-size: 40px;
+        width: 100%;
+        color: rgb(255, 255, 255);
+    }
+
+    .offers-left button {
+        width: 150px;
+        height: 50px;
+        margin-top: 20px;
+        margin-bottom: 20px; /* Añadido margen inferior para separar el botón de los títulos */
+        align-self: center; /* Centra el botón horizontalmente */
+    }
+
+    .offers-right {
+        margin-top: 20px;
+    }
+
+    .offers-right img {
+        height: auto;
+        width: 100%;
+    }
+}

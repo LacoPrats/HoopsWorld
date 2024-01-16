@@ -1,0 +1,20 @@
+.hero {
+    height: 100vh;
+    background-image: url("../../assets/imagenes/banners/carrousel2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%; /* Hace que la imagen ocupe todo el ancho y alto de la pantalla */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente */
+    justify-content: center; /* Centra verticalmente */
+    position: relative; /* Permite posicionar elementos hijos relativamente */
+}
+
+/* Media queries para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+    .hero {
+        height: 30vh; /* Ajusta la altura automáticamente */
+        width: auto;
+    }
+}

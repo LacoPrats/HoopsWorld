@@ -1,0 +1,48 @@
+.popular {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 2rem;
+    height: auto; /* Cambiado a 'auto' para adaptarse al contenido */
+}
+
+.popular h1 {
+    font-size: 100px; /* Tamaño de fuente ajustado para pantallas más pequeñas */
+    font-weight: 600;
+    font-style: italic;
+    color: red;
+    text-align: center; /* Centra el texto horizontalmente */
+}
+
+.popular hr {
+    width: 50%; /* Ancho ajustado para pantallas más pequeñas */
+    height: 4px; /* Altura reducida */
+    border-radius: 5px;
+    background: rgb(0, 0, 0);
+    margin: 20px 0; /* Espaciado superior e inferior agregado */
+}
+
+.popular-item {
+    margin-top: 20px; /* Espaciado superior reducido */
+    display: flex;
+    flex-direction: row; /* Cambiado a columna para pantallas más pequeñas */
+    gap: 20px;
+}
+
+/* Media queries para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+    .popular h1 {
+        font-size: 2rem;
+    }
+
+    .popular hr {
+        width: 70%;
+        height: 3px;
+    }
+
+    .popular-item {
+        gap: 10px;
+        flex-direction: column;
+    }
+}

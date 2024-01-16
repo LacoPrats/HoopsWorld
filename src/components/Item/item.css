@@ -1,0 +1,66 @@
+.item {
+  width: 250px; /* Utiliza el 100% del ancho del contenedor padre */
+  box-shadow:
+      inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+      0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px; /* Reducido el relleno */
+  background-color: white;
+  margin-bottom: 20px; /* Añadido margen inferior para separar elementos */
+}
+
+.item p {
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 10px; /* Añadido margen superior */
+}
+
+.item img {
+  width: 100%; /* Utiliza el 100% del ancho del contenedor */
+  max-width: 250px; /* Establecido un ancho máximo */
+  height: auto; /* Altura automática para mantener las proporciones */
+}
+
+.item-prices {
+  display: flex;
+  flex-direction: row;/* Cambiado a columna para pantallas más pequeñas */
+  gap: 10px; /* Reducido el espacio entre los precios */
+  margin-top: 10px; /* Añadido margen superior */
+}
+
+.item-price-new,
+.item-price-old {
+  color: rgb(255, 0, 0);
+  font-size: 14px; /* Tamaño de fuente reducido */
+  font-weight: 600;
+  text-align: center; /* Centrado el texto horizontalmente */
+}
+
+.item-price-old {
+  color: brown; /* Cambiado el color a brown */
+  text-decoration: line-through;
+}
+
+.item:hover {
+  transform: scale(1.03); /* Reducido el factor de escala en el hover */
+  transition: 0.3s; /* Reducida la duración de la transición */
+}
+
+/* Media queries para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+  .item {
+      width: 200px;
+      padding: 10px;
+  }
+
+  .item img {
+      max-width: 200px; /* Utiliza el 100% del ancho disponible */
+  }
+
+  .item-prices {
+      flex-direction: row; /* Vuelve a la disposición en fila para pantallas más pequeñas */
+  }
+}

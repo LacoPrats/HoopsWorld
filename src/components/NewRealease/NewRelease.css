@@ -1,0 +1,45 @@
+.newrelease {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    height: 90vh;
+    padding: 2rem;
+    margin-bottom: 0px;
+}
+
+.newrelease h1 {
+    color: black;
+    font-size: 100px;
+    font-weight: 600;
+    font-style: italic;
+    color: red;
+}
+
+.nrhr {
+    width: 200px;
+    height: 6px;
+    border-radius: 10px;
+    background: rgb(0, 0, 0);
+}
+
+.releases {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 50px;
+    gap: 30px;
+}
+
+/* Media queries para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+    .newrelease h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .releases {
+        grid-template-columns: 1fr;
+        margin-top: 0
+        ; /* Cambiado a una sola columna para pantallas más pequeñas */
+    }
+}
