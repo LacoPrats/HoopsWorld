@@ -8,7 +8,7 @@
 }
 
 .popular h1 {
-    font-size: 100px; /* Tamaño de fuente ajustado para pantallas más pequeñas */
+    font-size: 60px; /* Tamaño de fuente ajustado para pantallas más pequeñas */
     font-weight: 600;
     font-style: italic;
     color: red;
