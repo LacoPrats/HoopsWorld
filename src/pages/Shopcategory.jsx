@@ -7,20 +7,19 @@ import './Shopcategory.css';
 const Shopcategory = (props) => {
   const { all_product } = useContext(ShopContext);
   const [showSortOptions, setShowSortOptions] = useState(false);
-  const [sortOrder, setSortOrder] = useState(null); // Estado para rastrear el orden de clasificación
+  const [sortOrder, setSortOrder] = useState(null); 
 
-  // Función para mostrar/ocultar las opciones de ordenación al hacer clic en "Sort by"
   const handleSortToggle = () => {
     setShowSortOptions(!showSortOptions);
   };
 
-  // Función para cambiar el orden de clasificación al seleccionar una opción
+
   const handleSortOptionClick = (order) => {
-    setSortOrder((prevOrder) => (prevOrder === order ? null : order)); // Desactiva si ya está activado
+    setSortOrder((prevOrder) => (prevOrder === order ? null : order)); 
     setShowSortOptions(false);
   };
 
-  // Función de comparación para ordenar productos por precio
+
   const compareByPrice = (a, b) => {
     const priceA = parseFloat(a.new_price);
     const priceB = parseFloat(b.new_price);
@@ -30,14 +29,13 @@ const Shopcategory = (props) => {
     } else if (sortOrder === 'desc') {
       return priceB - priceA;
     } else {
-      return 0; // No aplicar orden si sortOrder es null
+      return 0; 
     }
   };
 
-  // Texto dinámico para mostrar en "Sort by"
+
   const sortText = sortOrder === 'asc' ? 'Low Price' : (sortOrder === 'desc' ? 'High Price' : 'Sort by');
 
-  // Filtrar y ordenar productos antes de mostrarlos
   const filteredAndSortedProducts = all_product
     .filter((item) => props.category === item.category)
     .sort(compareByPrice);
