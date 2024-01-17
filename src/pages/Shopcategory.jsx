@@ -44,9 +44,6 @@ const Shopcategory = (props) => {
 
   return (
     <div className='shop-category'>
-   <div className='shopcategory-logo-container'> 
-      <img className='shopcategory-logo' src={props.image} alt="" />
-      </div>
       <img className='shopcategory-banner' src={props.banner} alt="" />
       <div className="shopcategory-indexSort">
         <p>

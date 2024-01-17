@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    height: 80vh;
+
 }
 .relatedproducts h1{
     color: rgb(255, 0, 0);
@@ -22,9 +22,6 @@ display: flex;
 gap: 30px;
 }
 @media screen and (max-width: 768px) {
-    .relatedproducts{
-        margin-bottom: 40rem;
-    }
     .relatedproducts h1 {
         font-size: 2rem;
         text-align: center;

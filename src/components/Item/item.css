@@ -9,12 +9,14 @@
   align-items: center;
   padding: 10px; /* Reducido el relleno */
   background-color: white;
-  margin-bottom: 20px; /* Añadido margen inferior para separar elementos */
+  margin-bottom: 20px; 
+  border: 1px solid rgb(106, 106, 106); 
+  /* Añadido margen inferior para separar elementos */
 }
 
 .item p {
   text-align: center;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   margin-top: 10px; /* Añadido margen superior */
 }
 

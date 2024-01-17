@@ -1,13 +1,13 @@
 .shopcategory-banner {
     display: block;
-    margin: 10px auto;
-    width: 90%;
-    height: 500px;
+
+    width: 100%;
+    height: auto;
 }
 
 .shopcategory-indexSort{
     display: flex;
-    margin: 0px 170px;
+    margin: 20px 170px;
     justify-content: space-between;
     align-items: center;
     }
@@ -82,9 +82,7 @@
         justify-content: center;
     }
     .shopcategory-banner {
-        display: block;
-        margin: 30px auto;
-        width: 90%;
+        width: 100%;
         height: 250px;
     }
     
