@@ -79,7 +79,7 @@
     border-radius: 10px;
     font-size: 14px;
     background: #ff0000;
-    color: wheat;
+    color: rgb(255, 255, 255);
 }
 
 @media screen and (max-width: 768px) {
@@ -125,7 +125,10 @@
 
     .nav-cart-count {
         margin-left: 0;
+     font-size: 9px;
+     
     }
+    
     .navlogo{
         width: 50px;
     }

@@ -10,7 +10,7 @@
     background: linear-gradient(black, rgb(22, 22, 22), black);
     gap: 30px;
     border-radius: 2rem;
-    margin-top: 150px;
+    margin-top: 200px;
 }
 
 .newsletter h1 {
@@ -37,7 +37,7 @@
 
 .newsletter input {
     width: 500px;
-    margin-left: 30px;
+    margin-left: 20px;
     border: none;
     outline: none;
     font-size: 16px;
@@ -50,6 +50,7 @@
     background: rgb(255, 0, 0);
     color: white;
     cursor: pointer;
+    border: none;
 }
 
 /* Media queries para pantallas más pequeñas */
@@ -75,12 +76,22 @@
 
     .newsletter input {
         width: 100%;
-        margin-left: 0;
+        margin-left: 20px;
         margin-top: 10px;
     }
 
     .newsletter div button {
         width: 100%;
-        margin-top: 10px;
+
     }
 }
+@media screen and (max-width: 380px) {
+    .newsletter {
+        width: 80%;
+        padding: 0 20px;
+        margin-top: 1750px;
+    }
+
+
+}
+
